@@ -1,0 +1,45 @@
+// header
+
+header {
+	@include pm-clear;
+	padding: 10rem 0;
+	background-color: $primary;
+	background-image: linear-gradient(45deg, #34363F 0%, #262830 100%);
+
+	h1 {
+		display: inline;
+		color: rgba(255,255,255,0.7);
+		font-weight: 100;
+		background-color: rgba(116,167,255,0.12);
+
+		span {
+			font-weight: 400;
+			color: $white;
+		}
+	}
+}
+
+.logo {
+	@include transition(.15s);
+	@include pm-clear;
+	position: fixed;
+	top: 2rem;
+	left: 2rem;
+	fill: $white;
+	width: 5rem;
+	height: 5rem;
+	background-color: $blue;
+	padding: 1rem;
+	border-radius: 4px;
+	border: 1px solid darken($blue, 5%);
+}
+
+#clear {
+	float: left;
+}
+
+#social {
+	background-color: $footer;
+	padding: 4rem 4rem 4rem 30rem;
+	margin-left: -30rem;
+}
